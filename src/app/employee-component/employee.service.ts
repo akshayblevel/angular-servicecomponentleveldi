@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IEmployee } from './employee';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class EmployeeService {
   getEmployees(): IEmployee[] {
     return [

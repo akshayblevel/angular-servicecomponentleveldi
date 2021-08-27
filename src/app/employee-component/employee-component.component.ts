@@ -5,7 +5,8 @@ import { EmployeeService } from './employee.service';
 @Component({
   selector: 'app-employee-component',
   templateUrl: './employee-component.component.html',
-  styleUrls: ['./employee-component.component.css']
+  styleUrls: ['./employee-component.component.css'],
+  providers: [EmployeeService]
 })
 export class EmployeeComponentComponent implements OnInit {
   private _listFilter: string = '';
